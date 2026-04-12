@@ -169,6 +169,11 @@
     footer{background:var(--navy-deep);color:rgba(255,255,255,.45);text-align:center;padding:1.8rem 2rem;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.06em;border-top:1px solid rgba(201,168,76,.2)}
 
 
+    /* INLINE SLIDE LINKS */
+    .pres-slides{display:inline-flex;align-items:center;gap:.4rem;margin-top:.5rem;font-family:var(--font-mono);font-size:.68rem;letter-spacing:.05em;color:var(--navy-mid);border:1px solid var(--border);padding:.25rem .65rem;border-radius:2px;transition:all .2s}
+    .pres-slides:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+    .pres-slides i{font-size:.7rem}
+
     /* MEDIA COVERAGE */
     .media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
     .media-card{display:block;background:var(--warm-white);border:1px solid var(--border);border-top:3px solid var(--navy);padding:1.4rem;border-radius:0 0 3px 3px;transition:border-top-color .2s,box-shadow .2s;color:var(--text)}
@@ -189,6 +194,11 @@
     .slide-meta{font-family:var(--font-mono);font-size:.68rem;color:var(--text-light);letter-spacing:.04em}
 
     @media(max-width:700px){.media-grid{grid-template-columns:1fr}}
+
+    /* INLINE SLIDE LINKS */
+    .pres-slides{display:inline-flex;align-items:center;gap:.4rem;margin-top:.5rem;font-family:var(--font-mono);font-size:.68rem;letter-spacing:.05em;color:var(--navy-mid);border:1px solid var(--border);padding:.25rem .65rem;border-radius:2px;transition:all .2s}
+    .pres-slides:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+    .pres-slides i{font-size:.7rem}
 
     @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
 
@@ -228,10 +238,10 @@
       <h1>Ayeni Taiwo<br>Michael</h1>
       <p class="hero-subtitle">Master's Student in Applied Statistics (Biostatistics), Georgia State University</p>
       <p class="hero-desc">
-        I develop flexible probability distributions and empirical likelihood methods
-        for survival analysis, with a focus on improving statistical inference for
-        biomedical data under small-sample and complex settings. My work integrates
-        distribution theory with likelihood-free inference, with applications in
+        My research develops flexible probability distributions and empirical likelihood
+        methods for survival analysis, with a focus on improving statistical inference
+        for biomedical data under small-sample and complex settings. It integrates
+        distribution theory and likelihood-free inference, with applications in
         biomedical research and reliability studies.
       </p>
       <div class="hero-pills">
@@ -266,8 +276,8 @@
           I am a Master's student in Applied Statistics with a concentration in Biostatistics
           at Georgia State University, working under the supervision of
           <a href="https://cas.gsu.edu/profile/yichuan-zhao/" target="_blank">Prof. Yichuan Zhao</a>.
-          My research develops flexible statistical models and empirical likelihood methods
-          for survival analysis, with a focus on biomedical data and small-sample inference.
+          My work centres on developing statistical models and likelihood-free inference methods
+          for biomedical survival data, particularly in small-sample settings.
         </p>
         <p>
           My current work introduces the Quadratic-Transformed Exponential-Gamma (QTEG)
@@ -305,7 +315,7 @@
           <h3>Quick Facts</h3>
           <div class="about-item">
             <i class="fas fa-university"></i>
-            <div><strong>Institution</strong>Georgia State University, Atlanta, GA</div>
+            <div><strong>Institution</strong><a href="https://www.gsu.edu/" target="_blank">Georgia State University</a>, Atlanta, GA</div>
           </div>
           <div class="about-item">
             <i class="fas fa-user-tie"></i>
@@ -332,18 +342,18 @@
     </div>
 
     <!-- Academic Roles -->
-    <h3 style="font-family:var(--font-display);font-size:1.1rem;color:var(--navy);margin:2.5rem 0 1rem">Academic Roles at Georgia State University</h3>
+    <h3 style="font-family:var(--font-display);font-size:1.1rem;color:var(--navy);margin:2.5rem 0 1rem">Academic Roles at <a href="https://www.gsu.edu/" target="_blank">Georgia State University</a></h3>
     <div class="roles-grid">
       <div class="role-card">
         <div class="role-title">Graduate Teaching Assistant (GTA)</div>
-        <div class="role-org">Department of Mathematics &amp; Statistics, GSU</div>
-        <div class="role-dates">Aug 2025 &mdash; Present</div>
-        <p>Provides academic support to undergraduate students enrolled in College Algebra. Assists with conceptual understanding, problem-solving strategies, and exam preparation in a structured learning environment.</p>
+        <div class="role-org"><a href="https://mathstat.gsu.edu/" target="_blank">Department of Mathematics &amp; Statistics</a>, GSU</div>
+        <div class="role-dates">Jan 2026 &mdash; Present</div>
+        <p>Provides academic support to undergraduate students enrolled in <a href="https://mathstat.gsu.edu/mile/" target="_blank">College Algebra (MILE Programme)</a>. Assists with conceptual understanding, problem-solving strategies, and exam preparation in a structured learning environment.</p>
       </div>
       <div class="role-card">
         <div class="role-title">Graduate Research Assistant (GRA)</div>
-        <div class="role-org">Department of Mathematics &amp; Statistics, GSU</div>
-        <div class="role-dates">Aug 2025 &mdash; Present</div>
+        <div class="role-org"><a href="https://mathstat.gsu.edu/" target="_blank">Department of Mathematics &amp; Statistics</a>, GSU</div>
+        <div class="role-dates">Jan 2026 &mdash; Present</div>
         <p>Conducts methodological research under <a href="https://cas.gsu.edu/profile/yichuan-zhao/" target="_blank">Prof. Yichuan Zhao</a> on distribution theory and empirical likelihood inference, contributing to the QTEG distribution thesis project and related manuscripts.</p>
       </div>
     </div>
@@ -372,7 +382,7 @@
       <div class="pipeline-step active">
         <div class="step-num">Stage 02</div>
         <div class="step-title">Empirical Likelihood Extension</div>
-        <div style="font-size:.8rem;color:rgba(255,255,255,.65);line-height:1.5;margin-top:.4rem">JEL and AJEL methods for likelihood-free parameter inference using survival-based estimating equations in biomedical settings.</div>
+        <div style="font-size:.8rem;color:rgba(255,255,255,.65);line-height:1.5;margin-top:.4rem">JEL and AJEL confidence interval methods using survival-based estimating equations — a likelihood-free inference framework for biomedical time-to-event data.</div>
         <span class="step-status status-active">In Progress</span>
       </div>
       <div class="arrow-sep"><i class="fas fa-chevron-right"></i></div>
@@ -392,12 +402,12 @@
       <div class="research-card">
         <div class="card-tag">Statistical Inference</div>
         <h3>Jackknife Empirical Likelihood</h3>
-        <p>Develops jackknife empirical likelihood (JEL and AJEL) methods for parameter estimation without reliance on parametric likelihood assumptions, improving inference accuracy for biomedical survival data in small-sample settings.</p>
+        <p>Develops jackknife empirical likelihood (JEL and AJEL) methods as a likelihood-free inference framework for parameter estimation, improving accuracy for biomedical time-to-event data under small-sample conditions.</p>
       </div>
       <div class="research-card">
         <div class="card-tag">Model Validation</div>
         <h3>Goodness-of-Fit via U-Statistics</h3>
-        <p>Proposes a goodness-of-fit testing framework based on characterisation-driven U-statistics within the empirical likelihood paradigm, providing a flexible tool for validating distributional assumptions in biomedical survival analysis.</p>
+        <p>Proposes a goodness-of-fit testing framework based on characterisation-driven U-statistics within the empirical likelihood paradigm, providing a formal tool for validating distributional assumptions in biomedical survival analysis.</p>
       </div>
       <div class="research-card">
         <div class="card-tag">Applied Statistics &bull; Live App</div>
@@ -506,30 +516,40 @@
     <div class="section-label">Talks &amp; Posters</div>
     <h2>Presentations</h2>
     <div class="section-divider"></div>
+
     <div class="pres-item">
       <div class="pres-year">2026</div>
       <div>
         <div class="pres-title">The QTEG Distribution and Its Empirical Likelihood Extension for Survival Analysis</div>
-        <div class="pres-venue">End-of-Year Research Celebration, Department of Mathematics &amp; Statistics, Georgia State University &middot; Atlanta, GA &middot; April 10, 2026</div>
-        <div class="pres-type">Oral Presentation</div>
+        <div class="pres-venue">End of the Year Celebration, <a href="https://mathstat.gsu.edu/" target="_blank">Department of Mathematics &amp; Statistics</a>, <a href="https://www.gsu.edu/" target="_blank">Georgia State University</a> &middot; 25 Park Place, Room 223, Atlanta, GA &middot; April 10, 2026</div>
+        <div class="pres-type">Oral Presentation &middot; 9:30–10:30 AM, Research Talks by Graduate Students</div>
+        <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.5rem">
+          <a href="End_of_year_QTEG_Presentation.pdf" download class="pres-slides"><i class="fas fa-file-pdf"></i> Download Slides (9 slides)</a>
+          <a href="GSU_End_of_Year_2026_Program.pdf" download class="pres-slides"><i class="fas fa-calendar-alt"></i> Event Program</a>
+        </div>
       </div>
     </div>
+
     <div class="pres-item">
       <div class="pres-year">2025</div>
       <div>
         <div class="pres-title">Comparative Evaluation of Machine Learning Algorithms for Three-Class Diabetes Classification Using NHANES Data</div>
         <div class="pres-venue">9th International Conference, Professional Statisticians' Society of Nigeria (PSSN) &middot; Federal Polytechnic, Ado-Ekiti &middot; August 2025</div>
         <div class="pres-type">Oral Presentation</div>
+        <a href="Comparative_Evaluation_ML_Diabetes.pptx" download class="pres-slides"><i class="fas fa-file-powerpoint"></i> Download Slides (14 slides)</a>
       </div>
     </div>
+
     <div class="pres-item">
       <div class="pres-year">2025</div>
       <div>
         <div class="pres-title">WorkWell AI: Predictive Wellness and Mental Health Monitoring</div>
         <div class="pres-venue">Northeastern University Pitch Summit</div>
         <div class="pres-type">Research Demonstration</div>
+        <a href="WorkWell_AI.pptx" download class="pres-slides"><i class="fas fa-file-powerpoint"></i> Download Slides (12 slides)</a>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -568,41 +588,6 @@
     </div>
   </div>
 
-    <!-- Slides -->
-    <h3 style="font-family:var(--font-display);font-size:1.05rem;color:var(--navy);margin:2.5rem 0 1rem">Presentation Slides</h3>
-    <div class="slides-grid">
-      <a href="Comparative_Evaluation_ML_Diabetes.pptx" download class="slide-item">
-        <div class="slide-icon"><i class="fas fa-file-powerpoint"></i></div>
-        <div>
-          <div class="slide-title">Comparative Evaluation of Machine Learning Algorithms for Three-Class Diabetes Classification Using NHANES Data</div>
-          <div class="slide-meta">PSSN 9th International Conference &middot; 2025 &middot; 14 slides</div>
-        </div>
-      </a>
-      <a href="WorkWell_AI.pptx" download class="slide-item">
-        <div class="slide-icon"><i class="fas fa-file-powerpoint"></i></div>
-        <div>
-          <div class="slide-title">WorkWell AI: Proactive Burnout Prevention Powered by AI</div>
-          <div class="slide-meta">Northeastern University Pitch Summit &middot; 2025 &middot; 12 slides</div>
-        </div>
-      </a>
-      <a href="End_of_year_QTEG_Presentation.pdf" download class="slide-item">
-        <div class="slide-icon"><i class="fas fa-file-pdf"></i></div>
-        <div>
-          <div class="slide-title">The QTEG Distribution and Its Empirical Likelihood Extension for Survival Modelling</div>
-          <div class="slide-meta">GSU End-of-Year Research Celebration &middot; April 10, 2026 &middot; 9 slides</div>
-        </div>
-      </a>
-    </div>
-
-    <!-- Book of Abstracts -->
-    <h3 style="font-family:var(--font-display);font-size:1.05rem;color:var(--navy);margin:2.5rem 0 1rem">Conference Proceedings</h3>
-    <div class="pub-item" style="margin-top:.5rem">
-      <div class="pub-authors"><strong>Ayeni, T.M.</strong>, Odukoya, E.A., &amp; Ilesanmi, A.O.</div>
-      <div class="pub-title">Comparative Evaluation of Machine Learning Algorithms for Three-Class Diabetes Classification Using NHANES Data</div>
-      <div class="pub-journal"><em>Book of Abstracts, 9th International Conference</em>, Professional Statisticians' Society of Nigeria (PSSN). Theme: Advancing Statistical Literacy in AI Applications: Nigeria's Strategy for Digital Transformation. Federal Polytechnic, Ado-Ekiti, August 2025.</div>
-      <a href="PSSN_2025_Book_of_Abstracts.pdf" download class="pub-doi" style="display:inline-flex;align-items:center;gap:.4rem;margin-top:.3rem"><i class="fas fa-download" style="font-size:.7rem"></i> Download Book of Abstracts</a>
-    </div>
-
   </div>
 </section>
 
@@ -628,9 +613,19 @@
       <div class="contact-info">
         <h3>Reach out</h3>
         <div class="contact-row"><i class="fas fa-envelope"></i><a href="/cdn-cgi/l/email-protection#6317021a060d0a51230410164d060716"><span class="__cf_email__" data-cfemail="c8bca9b1ada6a1fa88afbbbde6adacbd">[email&#160;protected]</span></a></div>
-        <div class="contact-row"><i class="fas fa-map-marker-alt"></i><span>Department of Mathematics &amp; Statistics<br>Georgia State University<br>25 Park Place NE, Atlanta, GA 30303</span></div>
+        <div class="contact-row"><i class="fas fa-map-marker-alt"></i><span><a href="https://mathstat.gsu.edu/" target="_blank">Department of Mathematics &amp; Statistics</a><br><a href="https://www.gsu.edu/" target="_blank">Georgia State University</a><br>25 Park Place NE, Atlanta, GA 30303</span></div>
       </div>
       <div class="contact-links">
         <a href="https://scholar.google.ca/citations?user=FIlAT50AAAAJ&hl=en" target="_blank" class="contact-link-item"><i class="fab fa-google"></i> Google Scholar</a>
         <a href="https://www.researchgate.net/profile/Taiwo-Ayeni-2" target="_blank" class="contact-link-item"><i class="fab fa-researchgate"></i> ResearchGate</a>
-        <a href="https://github.com/ayeni-T" target="_blank" class="contact-link-item"><i cla
+        <a href="https://github.com/ayeni-T" target="_blank" class="contact-link-item"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/taiwo-ayeni-a0b020171/" target="_blank" class="contact-link-item"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>&copy; 2026 Ayeni Taiwo Michael &nbsp;&middot;&nbsp; <a href="https://mathstat.gsu.edu/" target="_blank" style="color:rgba(255,255,255,.45)">Department of Mathematics &amp; Statistics</a> &nbsp;&middot;&nbsp; <a href="https://www.gsu.edu/" target="_blank" style="color:rgba(255,255,255,.45)">Georgia State University</a> &nbsp;&middot;&nbsp; Atlanta, GA</footer>
+
+</body>
+</html>
