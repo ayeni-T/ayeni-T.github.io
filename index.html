@@ -200,6 +200,18 @@
     .pres-slides:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
     .pres-slides i{font-size:.7rem}
 
+    /* ACADEMIC SERVICE */
+    .service-block{background:var(--warm-white);border:1px solid var(--border);border-left:4px solid var(--navy);border-radius:0 3px 3px 0;padding:1.6rem;transition:border-left-color .2s}
+    .service-block:hover{border-left-color:var(--gold)}
+    .service-header{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:1.2rem;flex-wrap:wrap}
+    .service-title{font-family:var(--font-display);font-size:1.05rem;font-weight:600;color:var(--navy-deep);margin-bottom:.3rem}
+    .service-sub{font-family:var(--font-mono);font-size:.72rem;color:var(--text-light);letter-spacing:.04em}
+    .btn-service{display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;background:var(--navy);color:#fff;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.06em;border-radius:2px;white-space:nowrap;transition:background .2s;flex-shrink:0}
+    .btn-service:hover{background:var(--navy-mid);color:#fff}
+    .service-journal-label{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem}
+    .journal-tags{display:flex;flex-wrap:wrap;gap:.5rem}
+    .jtag{font-size:.78rem;padding:.28rem .75rem;background:var(--section-bg);border:1px solid var(--border);border-radius:2px;color:var(--text-mid);font-family:var(--font-body)}
+
     /* HAMBURGER MENU */
     .nav-toggle{display:none;flex-direction:column;justify-content:space-between;width:26px;height:20px;background:transparent;border:none;cursor:pointer;padding:0;flex-shrink:0}
     .nav-toggle span{display:block;width:100%;height:2px;background:#fff;border-radius:2px;transition:transform .3s,opacity .3s}
@@ -261,6 +273,7 @@
     <li><a href="#research" onclick="closeNav()">Research</a></li>
     <li><a href="#publications" onclick="closeNav()">Publications</a></li>
     <li><a href="#awards" onclick="closeNav()">Awards</a></li>
+    <li><a href="#service" onclick="closeNav()">Service</a></li>
     <li><a href="#media" onclick="closeNav()">Media</a></li>
     <li><a href="#cv" onclick="closeNav()">CV</a></li>
     <li><a href="#contact" onclick="closeNav()">Contact</a></li>
@@ -529,6 +542,39 @@
       </div>
     </div>
 
+  </div>
+</section>
+<!-- ACADEMIC SERVICE -->
+<section id="service">
+  <div class="section-inner">
+    <div class="section-label">Scholarly Service</div>
+    <h2>Academic Service</h2>
+    <div class="section-divider"></div>
+    <div class="service-block">
+      <div class="service-header">
+        <div>
+          <div class="service-title">Peer Reviewer &mdash; Web of Science Verified</div>
+        </div>
+        <a href="https://www.webofscience.com/wos/op/peer-reviews/summary" target="_blank" class="btn-service">
+          <i class="fas fa-external-link-alt"></i> View Profile
+        </a>
+      </div>
+      <div class="service-journals">
+        <div class="service-journal-label">Journals Reviewed For</div>
+        <div class="journal-tags">
+          <span class="jtag">Asian Journal of Probability and Statistics</span>
+          <span class="jtag">International Journal of Plant &amp; Soil Science</span>
+          <span class="jtag">International Journal of Environment and Climate Change</span>
+          <span class="jtag">Asian Journal of Research in Agriculture and Forestry</span>
+          <span class="jtag">Asian Journal of Geographical Research</span>
+          <span class="jtag">Current Research on Geography, Earth Science and Environment</span>
+          <span class="jtag">Annual Research &amp; Review in Biology</span>
+          <span class="jtag">Asian Journal of Advances in Agricultural Research</span>
+          <span class="jtag">Asian Research Journal of Mathematics</span>
+          <span class="jtag">Plant Cell Biotechnology and Molecular Biology</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
