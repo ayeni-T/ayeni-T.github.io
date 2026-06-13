@@ -140,6 +140,9 @@
     .award-year{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.08em;color:var(--gold);margin-bottom:.3rem}
     .award-title{font-family:var(--font-display);font-weight:600;font-size:.95rem;color:var(--navy-deep);margin-bottom:.2rem;line-height:1.3}
     .award-org{font-size:.82rem;color:var(--text-light);font-style:italic}
+    .award-cert{display:inline-flex;align-items:center;gap:.4rem;margin-top:.55rem;font-family:var(--font-mono);font-size:.66rem;letter-spacing:.05em;color:var(--navy-mid);border:1px solid var(--border);padding:.22rem .6rem;border-radius:2px;transition:all .2s}
+    .award-cert:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+    .award-cert i{font-size:.68rem}
 
     /* PRESENTATIONS */
     .pres-item{display:grid;grid-template-columns:80px 1fr;gap:1.2rem;padding:1.2rem 0;border-bottom:1px solid var(--border)}
@@ -381,7 +384,7 @@
           </div>
           <div class="about-item">
             <i class="fas fa-flask"></i>
-            <div><strong>Thesis</strong>QTEG Distribution &amp; Empirical Likelihood Extension</div>
+            <div><strong>Thesis</strong>QTEG Distribution: Distribution Theory, Empirical Likelihood Inference, and Goodness-of-Fit Testing</div>
           </div>
           <div class="about-item">
             <i class="fas fa-envelope"></i>
@@ -431,16 +434,16 @@
       <div class="arrow-sep"><i class="fas fa-chevron-right"></i></div>
       <div class="pipeline-step active">
         <div class="step-num">Stage 02</div>
-        <div class="step-title">Empirical Likelihood Extension</div>
-        <div style="font-size:.8rem;color:rgba(255,255,255,.65);line-height:1.5;margin-top:.4rem">JEL and AJEL confidence interval methods using survival-based estimating equations — a likelihood-free inference framework for biomedical time-to-event data.</div>
+        <div class="step-title">Jackknife Empirical Likelihood for the QTEG Distribution</div>
+        <div style="font-size:.8rem;color:rgba(255,255,255,.65);line-height:1.5;margin-top:.4rem">JEL and AJEL confidence interval methods for parameter inference and survival probabilities under skewed finite-sample conditions.</div>
         <span class="step-status status-active">In Progress</span>
       </div>
       <div class="arrow-sep"><i class="fas fa-chevron-right"></i></div>
       <div class="pipeline-step">
         <div class="step-num">Stage 03</div>
-        <div class="step-title">Goodness-of-Fit Testing</div>
-        <div style="font-size:.8rem;color:var(--text-light);line-height:1.5;margin-top:.4rem">Goodness-of-fit testing via characterisation-based U-statistics within the empirical likelihood framework for validating biomedical survival models.</div>
-        <span class="step-status status-proposed">Proposed</span>
+        <div class="step-title">Characterisation-Based Goodness-of-Fit Testing for the QTEG Distribution</div>
+        <div style="font-size:.8rem;color:var(--text-light);line-height:1.5;margin-top:.4rem">Characterisation-based jackknife empirical likelihood goodness-of-fit test with a Bartlett-corrected variant for finite-sample calibration.</div>
+        <span class="step-status status-proposed">In Preparation</span>
       </div>
     </div>
     <div class="research-cards">
@@ -451,13 +454,13 @@
       </div>
       <div class="research-card">
         <div class="card-tag">Statistical Inference</div>
-        <h3>Jackknife Empirical Likelihood</h3>
-        <p>Develops jackknife empirical likelihood (JEL and AJEL) methods as a likelihood-free inference framework for parameter estimation, improving accuracy for biomedical time-to-event data under small-sample conditions.</p>
+        <h3>Jackknife Empirical Likelihood for the QTEG Distribution</h3>
+        <p>Develops JEL and AJEL confidence interval methods for the QTEG model, targeting Wilks-type limits for parameter inference and survival probabilities in skewed finite-sample settings where Wald-based intervals may be miscalibrated.</p>
       </div>
       <div class="research-card">
         <div class="card-tag">Model Validation</div>
-        <h3>Goodness-of-Fit via U-Statistics</h3>
-        <p>Proposes a goodness-of-fit testing framework based on characterisation-driven U-statistics within the empirical likelihood paradigm, providing a formal tool for validating distributional assumptions in biomedical survival analysis.</p>
+        <h3>Characterisation-Based Goodness-of-Fit Testing for the QTEG Distribution</h3>
+        <p>Proposes a characterisation-based jackknife empirical likelihood goodness-of-fit test for the QTEG model, with a Bartlett-corrected variant to improve finite-sample calibration, requiring no parametric bootstrap.</p>
       </div>
       <div class="research-card">
         <div class="card-tag">Applied Statistics &bull; Live App</div>
@@ -528,19 +531,15 @@
       <div class="pub-group-label">Manuscripts in Preparation</div>
       <div class="pub-item">
         <div class="pub-authors"><strong>Ayeni, T.M.</strong> &amp; Zhao, Y.</div>
-        <div class="pub-title">Jackknife Empirical Likelihood Inference for the Quadratic-Transformed Exponential-Gamma Distribution <span class="pub-badge badge-prep">In Preparation</span></div>
+        <div class="pub-title">Empirical Likelihood Inference for Skewed Lifetime Models: A Jackknife Approach for the QTEG Distribution <span class="pub-badge badge-prep">In Preparation</span></div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-authors"><strong>Ayeni, T.M.</strong> &amp; Zhao, Y.</div>
+        <div class="pub-title">A Characterisation-Based Jackknife Empirical Likelihood Goodness-of-Fit Test for the Quadratic-Transformed Exponential-Gamma Distribution <span class="pub-badge badge-prep">In Preparation</span></div>
       </div>
     </div>
 
     <div class="pub-group">
-      <div class="pub-group-label">Conference Proceedings</div>
-      <div class="pub-item">
-        <div class="pub-authors"><strong>Ayeni, T.M.</strong>, Odukoya, E.A., &amp; Ilesanmi, A.O.</div>
-        <div class="pub-title">Comparative Evaluation of Machine Learning Algorithms for Three-Class Diabetes Classification Using NHANES Data</div>
-        <div class="pub-journal"><em>Book of Abstracts, 9th International Conference</em>, Professional Statisticians' Society of Nigeria (PSSN). Advancing Statistical Literacy in AI Applications: Nigeria's Strategy for Digital Transformation. Federal Polytechnic, Ado-Ekiti, August 2025.</div>
-        <a href="PSSN_2025_Book_of_Abstracts.pdf" download class="pub-doi" style="display:inline-flex;align-items:center;gap:.4rem;margin-top:.3rem"><i class="fas fa-download" style="font-size:.7rem"></i> Download Book of Abstracts</a>
-      </div>
-    </div>
 
   </div>
 </section>
@@ -586,6 +585,18 @@
     <div class="section-divider"></div>
     <div class="awards-grid">
       <div class="award-card">
+        <div class="award-year">2026</div>
+        <div class="award-title">Student Poster Competition Award &mdash; Cash Prize</div>
+        <div class="award-org">61st Annual SRCOS Summer Research Conference &middot; Southern Regional Council on Statistics &middot; Pensacola Beach, FL &middot; June 7&ndash;10, 2026</div>
+        <a href="SRCOS_2026_Certificate.pdf" download class="award-cert"><i class="fas fa-file-pdf"></i> Download Certificate</a>
+      </div>
+      <div class="award-card">
+        <div class="award-year">2026</div>
+        <div class="award-title">Student Poster Competition Award &mdash; Cash Prize</div>
+        <div class="award-org">11th Workshop on Biostatistics and Bioinformatics &middot; ASA Georgia Chapter &middot; May 8&ndash;10, 2026</div>
+        <a href="ASA_cert.pdf" download class="award-cert"><i class="fas fa-file-pdf"></i> Download Certificate</a>
+      </div>
+      <div class="award-card">
         <div class="award-year">2025</div>
         <div class="award-title">Fellow, Commonwealth Academy of Leadership and Management (FCALM)</div>
         <div class="award-org">Commonwealth Academy of Leadership &amp; Management, United Kingdom &mdash; FCALM.0320.25</div>
@@ -614,6 +625,60 @@
     <div class="pres-item">
       <div class="pres-year">2026</div>
       <div>
+        <div class="pres-title">Quadratic Functional Variable Transformation of the Exponential-Gamma Distribution</div>
+        <div class="pres-venue">2026 NISS Virtual New Researchers Conference &middot; National Institute of Statistical Sciences &middot; Online &middot; June 5, 2026</div>
+        <div class="pres-type">Oral Presentation &middot; Session 2: Biostatistics &amp; Biomedical Applications</div>
+        <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.5rem">
+          <a href="QTEG_NISS_2026_Slides.pdf" download class="pres-slides"><i class="fas fa-file-pdf"></i> Download Slides</a>
+          <a href="NISS_2026_Agenda.pdf" download class="pres-slides"><i class="fas fa-calendar-alt"></i> Conference Agenda</a>
+          <a href="Taiwo_Ayeni_NISS_Certificate.pdf" download class="pres-slides"><i class="fas fa-certificate"></i> Certificate of Participation</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pres-item">
+      <div class="pres-year">2026</div>
+      <div>
+        <div class="pres-title">Quadratic Transformation of the Exponential&ndash;Gamma Distribution for Flexible Lifetime Modelling</div>
+        <div class="pres-venue">61st Annual SRCOS Summer Research Conference &middot; Southern Regional Council on Statistics &middot; Pensacola Beach, FL &middot; June 7&ndash;10, 2026</div>
+        <div class="pres-type">Poster Presentation &middot; Poster Session, June 8, 2026 &middot; <span style="color:var(--gold)">&#9733; Student Poster Award &mdash; Cash Prize</span></div>
+        <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.5rem">
+          <a href="QTEG_Poster_2026.pdf" download class="pres-slides"><i class="fas fa-file-pdf"></i> Download Poster</a>
+          <a href="SRCOS_2026_Program_Book.pdf" download class="pres-slides"><i class="fas fa-book-open"></i> Program Book</a>
+          <a href="SRCOS_2026_Certificate.pdf" download class="pres-slides"><i class="fas fa-certificate"></i> Award Certificate</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pres-item">
+      <div class="pres-year">2026</div>
+      <div>
+        <div class="pres-title">Quadratic Transformation of the Exponential&ndash;Gamma Distribution for Flexible Lifetime Modelling</div>
+        <div class="pres-venue">Modeling the Invisible Workshop 2026 &middot; Atlanta, GA &middot; June 3&ndash;4, 2026</div>
+        <div class="pres-type">Poster Presentation</div>
+        <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.5rem">
+          <a href="QTEG_Poster_2026.pdf" download class="pres-slides"><i class="fas fa-file-pdf"></i> Download Poster</a>
+          <a href="ModelingTheInvisibleWorkshop_Schedule.pdf" download class="pres-slides"><i class="fas fa-calendar-alt"></i> Workshop Schedule</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pres-item">
+      <div class="pres-year">2026</div>
+      <div>
+        <div class="pres-title">Quadratic Transformation of the Exponential&ndash;Gamma Distribution for Flexible Lifetime Modelling</div>
+        <div class="pres-venue">11th Workshop on Biostatistics and Bioinformatics &middot; ASA Georgia Chapter &middot; Dean's Meeting Center, 26th Floor &amp; College of Arts and Sciences Event Center, 2nd Floor, 25 Park Place, Atlanta, GA 30303, Georgia State University &middot; May 8&ndash;10, 2026</div>
+        <div class="pres-type">Poster Presentation &middot; <span style="color:var(--gold)">&#9733; Student Poster Award &mdash; Cash Prize</span></div>
+        <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.5rem">
+          <a href="QTEG_Poster_2026.pdf" download class="pres-slides"><i class="fas fa-file-pdf"></i> Download Poster</a>
+          <a href="ASA_cert.pdf" download class="pres-slides"><i class="fas fa-certificate"></i> Award Certificate</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pres-item">
+      <div class="pres-year">2026</div>
+      <div>
         <div class="pres-title">The QTEG Distribution and Its Empirical Likelihood Extension for Survival Analysis</div>
         <div class="pres-venue">End of the Year Celebration, <a href="https://mathstat.gsu.edu/" target="_blank">Department of Mathematics &amp; Statistics</a>, <a href="https://www.gsu.edu/" target="_blank">Georgia State University</a> &middot; 25 Park Place, Room 223, Atlanta, GA, USA &middot; April 10, 2026</div>
         <div class="pres-type">Oral Presentation &middot; 9:30–10:30 AM, Research Talks by Graduate Students</div>
@@ -629,10 +694,11 @@
       <div>
         <div class="pres-title">Comparative Evaluation of Machine Learning Algorithms for Three-Class Diabetes Classification Using NHANES Data</div>
         <div class="pres-venue">9th International Conference, Professional Statisticians' Society of Nigeria (PSSN) &middot; Federal Polytechnic, Ado-Ekiti &amp; Ekiti State University, Ado-Ekiti, Nigeria &middot; August 4&ndash;7, 2025</div>
-        <div class="pres-type">Oral Presentation</div>
+        <div class="pres-type">Oral Presentation &middot; <em>Book of Abstracts</em>: Advancing Statistical Literacy in AI Applications: Nigeria&rsquo;s Strategy for Digital Transformation</div>
         <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.5rem">
           <a href="Comparative_Evaluation_ML_Diabetes.pptx" download class="pres-slides"><i class="fas fa-file-powerpoint"></i> Download Slides (14 slides)</a>
           <a href="PSSN_2025_Conference_Flyer.jpeg" download class="pres-slides"><i class="fas fa-image"></i> Conference Flyer</a>
+          <a href="PSSN_2025_Book_of_Abstracts.pdf" download class="pres-slides"><i class="fas fa-file-pdf"></i> Book of Abstracts</a>
         </div>
       </div>
     </div>
@@ -737,24 +803,6 @@
     links.classList.remove('open');
   }
   // Close menu on outside click
-  document.addEventListener('click', (e) => {
-    if (!toggle.contains(e.target) && !links.contains(e.target)) closeNav();
-  });
-</script>
-
-
-
-<script>
-  const toggle = document.getElementById('navToggle');
-  const links  = document.getElementById('navLinks');
-  toggle.addEventListener('click', () => {
-    toggle.classList.toggle('open');
-    links.classList.toggle('open');
-  });
-  function closeNav() {
-    toggle.classList.remove('open');
-    links.classList.remove('open');
-  }
   document.addEventListener('click', (e) => {
     if (!toggle.contains(e.target) && !links.contains(e.target)) closeNav();
   });
